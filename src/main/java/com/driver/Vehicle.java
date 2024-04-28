@@ -41,8 +41,8 @@ public class Vehicle {
 
     public void move(int speed, int direction){
         //set the values of currentSpeed and currentDirection
-        this.currentSpeed = speed;
-        this.currentDirection = direction;
+        setCurrentSpeed(speed);
+        setCurrentDirection(direction);
         System.out.println("move method called - The speed is changed to: " + currentSpeed + ", and the direction is changed to: " + currentDirection + " degrees");
     }
 
