@@ -3,19 +3,30 @@ package com.driver;
 public class Vehicle {
 
     private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getCurrentSpeed() {
+        return currentSpeed;
+    }
+
+    public void setCurrentSpeed(int currentSpeed) {
+        this.currentSpeed = currentSpeed;
+    }
+
     private int currentSpeed;
     private int currentDirection;
 
     public Vehicle(String name) {
-        this.name = name;
+        setName(name);
     }
 
-    public void set(int speed){
-        this.currentSpeed = speed;
-    }
-    public int get(){
-        return currentSpeed;
-    }
     public int getCurrentDirection(){
         return currentDirection;
     }
